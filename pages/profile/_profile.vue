@@ -290,7 +290,7 @@ export default {
           this.$router.push("/");
         }
         const response = await fetch(
-          `${"http://10.11.13.1:5000" || "http://localhost:5000"}/api/users/${this.$route.params.profile}`,
+          `${"http://10.11.12.12:8000" || "http://localhost:8000"}/api/users/${this.$route.params.profile}`,
           {
             method: "GET",
             headers: {
@@ -304,7 +304,7 @@ export default {
         } else {
           const user = await content.user;
           this.fetched = true;
-          this.image = `${"http://10.11.13.1:5000" || "http://localhost:5000"}/${user.image}`;
+          this.image = `${"http://10.11.12.12:8000" || "http://localhost:8000"}/${user.image}`;
           this.fullName = `${user.surname} ${user.name}`;
           this.name = user.name;
           this.surname = user.surname;
@@ -332,7 +332,7 @@ export default {
             this.$router.push("/");
           }
           const response = await fetch(
-            `${"http://10.11.13.1:5000" || "http://localhost:5000"}/api/contacts/${this.$route.params.profile}`,
+            `${"http://10.11.12.12:8000" || "http://localhost:8000"}/api/contacts/${this.$route.params.profile}`,
             {
               method: "GET",
               headers: {
@@ -344,7 +344,7 @@ export default {
           if (content.message) {
             this.errors = content.message;
           } else {
-            window.location.href = `${"http://10.11.13.1:5000" || "http://localhost:5000"}/${content.link}`;
+            window.location.href = `${"http://10.11.12.12:8000" || "http://localhost:8000"}/${content.link}`;
           }
         } catch (err) {
           console.log(err);

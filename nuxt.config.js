@@ -85,5 +85,8 @@ export default {
     //     'window.jQuery': 'jquery'
     //   })
     // ]
+  },
+  server: {
+    host: "0.0.0.0"
   }
 }

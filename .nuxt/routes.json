@@ -1,0 +1,65 @@
+[
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "/goinfre/mlachheb/final_mvp/pages/About.vue",
+    "chunkName": "pages/About",
+    "_name": "_71f480d8"
+  },
+  {
+    "name": "coming",
+    "path": "/coming",
+    "component": "/goinfre/mlachheb/final_mvp/pages/coming.vue",
+    "chunkName": "pages/coming",
+    "_name": "_7db5a2ac"
+  },
+  {
+    "name": "Confirmation",
+    "path": "/Confirmation",
+    "component": "/goinfre/mlachheb/final_mvp/pages/Confirmation.vue",
+    "chunkName": "pages/Confirmation",
+    "_name": "_581ea97e"
+  },
+  {
+    "name": "Contact",
+    "path": "/Contact",
+    "component": "/goinfre/mlachheb/final_mvp/pages/Contact.vue",
+    "chunkName": "pages/Contact",
+    "_name": "_1f10fee7"
+  },
+  {
+    "name": "form",
+    "path": "/form",
+    "component": "/goinfre/mlachheb/final_mvp/pages/form.vue",
+    "chunkName": "pages/form",
+    "_name": "_0889a76d"
+  },
+  {
+    "name": "Search",
+    "path": "/Search",
+    "component": "/goinfre/mlachheb/final_mvp/pages/Search.vue",
+    "chunkName": "pages/Search",
+    "_name": "_c696eb9e"
+  },
+  {
+    "name": "uuuu",
+    "path": "/uuuu",
+    "component": "/goinfre/mlachheb/final_mvp/pages/uuuu.vue",
+    "chunkName": "pages/uuuu",
+    "_name": "_61aff1e9"
+  },
+  {
+    "name": "profile-profile",
+    "path": "/profile/:profile?",
+    "component": "/goinfre/mlachheb/final_mvp/pages/profile/_profile.vue",
+    "chunkName": "pages/profile/_profile",
+    "_name": "_6f065939"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/goinfre/mlachheb/final_mvp/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6f4b7a79"
+  }
+]

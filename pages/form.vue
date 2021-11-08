@@ -313,17 +313,13 @@ export default {
       this.whatsapp = this.whatsapp.trim();
       if (
         this.name === "" ||
-        this.whatsapp =="" ||
-        this.facebook =="" ||
-        this.linkedin =="" ||
-        this.instagram =="" ||
         this.surname === "" ||
         this.email === "" ||
         this.telephone === "" ||
         this.prefession === "" ||
         this.address === "" ||
         this.city === "" ||
-        codePostal === "" ||
+        this.codePostal === "" ||
         this.country === "Pays" ||
         this.biography === ""
       ) {
@@ -359,7 +355,7 @@ export default {
           formData.append("linkedin", this.linkedin);
 
           const response = await fetch(
-            `${process.env.NUXT_APP_API_ENDPOINT || ''}/api/users/signup`,
+            `${process.env.NUXT_APP_API_ENDPOINT || 'http://10.11.12.12:8000'}/api/users/signup`,
             {
               method: "POST",
               body: formData
@@ -367,22 +363,17 @@ export default {
           );
 
           const content = await response.json();
-
-          // const tokenExpirationTime = new Date(
-          //   new Date().getTime() + 1000 * 60 * 60
-          // );
-          // localStorage.setItem(
-          //   "userData",
-          //   JSON.stringify({
-          //     userId: await content.userId,
-          //     token: await content.token,
-          //     expiration: tokenExpirationTime.toISOString(),
-          //   })
-          // );
           if (content.message) {
             this.errors = content.message;
           } else {
-            await this.$router.push("/Confirmation");
+            localStorage.setItem(
+              "userData",
+              JSON.stringify({
+                userId: await content.userId,
+                token: await content.token
+              })
+            );
+            await this.$router.push(`/profile/${content.userId}`);
           }
         } catch (err) {
           console.log(err);
@@ -393,7 +384,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await fetch(`${process.env.NUXT_APP_API_ENDPOINT || ''}/api/countries`, {
+      const response = await fetch(`${process.env.NUXT_APP_API_ENDPOINT || 'http://10.11.12.12:8000'}/api/countries`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });

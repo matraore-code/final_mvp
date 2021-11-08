@@ -1549,6 +1549,11 @@
   "resolved" "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   "version" "1.1.2"
 
+"vcards-js@^2.10.0":
+  "integrity" "sha512-nah+xbVInVJaO6+C5PEUqaougmv8BN8aa7ZCtmVQcX6eWIZGRukckFtseXSI7KD7/nXtwkJe624y42T0r+L+AQ=="
+  "resolved" "https://registry.npmjs.org/vcards-js/-/vcards-js-2.10.0.tgz"
+  "version" "2.10.0"
+
 "webidl-conversions@^6.1.0":
   "integrity" "sha512-qBIvFLGiBpLjfwmYAaHPXsn+ho5xZnGvyGvsarywGNc8VyQJUMHJ8OBKGGrPER0okBeMDaan4mNBlgBROxuI8w=="
   "resolved" "https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-6.1.0.tgz"

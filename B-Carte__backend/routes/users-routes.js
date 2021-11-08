@@ -7,8 +7,6 @@ const checkAuth = require('../middleware/check-auth');
 
 const router = express.Router();
 
-router.get('/', usersControllers.getUsers); // to remove after
-
 router.get('/:uid', usersControllers.getUserById);
 
 router.post('/signup',
@@ -28,17 +26,5 @@ router.post('/signup',
     ],
     usersControllers.signup
 );
-
-router.post('/login', usersControllers.login);
-
-router.use(checkAuth);
-
-router.patch('/update/:uid',
-    // fileUpload.single('image'),
-    usersControllers.updateUser
-);
-
-router.post('/addfriend/:fid', usersControllers.addFriend);
-router.delete('/removefriend/:fid', usersControllers.removeFriend);
 
 module.exports = router;
