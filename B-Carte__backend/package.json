@@ -1,0 +1,37 @@
+{
+  "name": "b-carte__backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedamine456/B-Carte__backend.git"
+  },
+  "author": "mohamedamine456",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedamine456/B-Carte__backend/issues"
+  },
+  "homepage": "https://github.com/mohamedamine456/B-Carte__backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.8",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.6.5",
+    "path": "^0.12.7",
+    "uuidv4": "^6.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
