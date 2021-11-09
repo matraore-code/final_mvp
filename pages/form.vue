@@ -97,7 +97,7 @@
           <div class="col-md-4">
             <div class="mb-3">
               <input
-                v-model="prefession"
+                v-model="profession"
                 type="text"
                 class="form-control"
                 id="status"
@@ -278,7 +278,7 @@ export default {
       surname: "",
       email: "",
       telephone: "",
-      prefession: "",
+      profession: "",
       address: "",
       city: "",
       codePostal: "",
@@ -303,7 +303,7 @@ export default {
       this.surname = this.surname.trim();
       this.email = this.email.trim();
       this.telephone = this.telephone.trim();
-      this.prefession = this.prefession.trim();
+      this.profession = this.profession.trim();
       this.address = this.address.trim();
       this.city = this.city.trim();
       this.codePostal = this.codePostal.trim();
@@ -318,7 +318,7 @@ export default {
         this.surname === "" ||
         this.email === "" ||
         this.telephone === "" ||
-        this.prefession === "" ||
+        this.profession === "" ||
         this.address === "" ||
         this.city === "" ||
         this.codePostal === "" ||
