@@ -34,7 +34,7 @@
                 aria-label="Formule"
               >
                 <option value="tags" selected>TAGS</option>
-                <option value="Standart">CARTES</option>
+                <option value="cartes">CARTES</option>
               </select>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default {
   data() {
     return {
       image: null,
-      formule: "TAGS",
+      formule: "",
       name: "",
       surname: "",
       email: "",
@@ -289,6 +289,7 @@ export default {
       instagram: "",
       whatsapp: "",
       linkedin: "",
+      tiktok: "",
       countries: [],
     };
   },
@@ -311,6 +312,7 @@ export default {
       this.instagram = this.instagram.trim();
       this.linkedin = this.linkedin.trim();
       this.whatsapp = this.whatsapp.trim();
+      this.tiktok = this.tiktok.trim();
       if (
         this.name === "" ||
         this.surname === "" ||
@@ -353,9 +355,10 @@ export default {
           formData.append("instagram", this.instagram);
           formData.append("whatsapp", this.whatsapp);
           formData.append("linkedin", this.linkedin);
+          formData.append("tiktok", this.tiktok);
 
           const response = await fetch(
-            `${process.env.NUXT_APP_API_ENDPOINT || 'http://10.11.12.12:8000'}/api/users/signup`,
+            `${process.env.NUXT_APP_API_ENDPOINT || 'http://10.11.12.9:8000'}/api/users/signup`,
             {
               method: "POST",
               body: formData
@@ -384,7 +387,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await fetch(`${process.env.NUXT_APP_API_ENDPOINT || 'http://10.11.12.12:8000'}/api/countries`, {
+      const response = await fetch(`${process.env.NUXT_APP_API_ENDPOINT || 'http://10.11.12.9:8000'}/api/countries`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       });

@@ -170,7 +170,7 @@ export default {
       if (this.errors === "") {
         try {
           const response = await fetch(
-            `${"http://10.11.12.12:8000" || "http://localhost:8000"}/api/sendEmail`,
+            `${"http://10.11.12.9:8000" || "http://localhost:8000"}/api/sendEmail`,
             {
               method: "POST",
               headers: { 'Content-Type': 'application/json' },

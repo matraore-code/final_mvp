@@ -2,64 +2,64 @@
   {
     "name": "About",
     "path": "/About",
-    "component": "/goinfre/mlachheb/final_mvp/pages/About.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/About.vue",
     "chunkName": "pages/About",
-    "_name": "_71f480d8"
+    "_name": "_91ff75ae"
   },
   {
     "name": "coming",
     "path": "/coming",
-    "component": "/goinfre/mlachheb/final_mvp/pages/coming.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/coming.vue",
     "chunkName": "pages/coming",
-    "_name": "_7db5a2ac"
+    "_name": "_5f094896"
   },
   {
     "name": "Confirmation",
     "path": "/Confirmation",
-    "component": "/goinfre/mlachheb/final_mvp/pages/Confirmation.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/Confirmation.vue",
     "chunkName": "pages/Confirmation",
-    "_name": "_581ea97e"
+    "_name": "_6578bb6e"
   },
   {
     "name": "Contact",
     "path": "/Contact",
-    "component": "/goinfre/mlachheb/final_mvp/pages/Contact.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/Contact.vue",
     "chunkName": "pages/Contact",
-    "_name": "_1f10fee7"
+    "_name": "_0aff1988"
   },
   {
     "name": "form",
     "path": "/form",
-    "component": "/goinfre/mlachheb/final_mvp/pages/form.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/form.vue",
     "chunkName": "pages/form",
-    "_name": "_0889a76d"
+    "_name": "_290d9b38"
   },
   {
     "name": "Search",
     "path": "/Search",
-    "component": "/goinfre/mlachheb/final_mvp/pages/Search.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/Search.vue",
     "chunkName": "pages/Search",
-    "_name": "_c696eb9e"
+    "_name": "_a7ea9188"
   },
   {
     "name": "uuuu",
     "path": "/uuuu",
-    "component": "/goinfre/mlachheb/final_mvp/pages/uuuu.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/uuuu.vue",
     "chunkName": "pages/uuuu",
-    "_name": "_61aff1e9"
+    "_name": "_fb983498"
   },
   {
     "name": "profile-profile",
     "path": "/profile/:profile?",
-    "component": "/goinfre/mlachheb/final_mvp/pages/profile/_profile.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/profile/_profile.vue",
     "chunkName": "pages/profile/_profile",
-    "_name": "_6f065939"
+    "_name": "_641bf484"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/goinfre/mlachheb/final_mvp/pages/index.vue",
+    "component": "/goinfre/matraore/final_mvp/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_6f4b7a79"
+    "_name": "_5f46000e"
   }
 ]

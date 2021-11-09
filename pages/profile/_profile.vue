@@ -138,14 +138,6 @@
                 ></i>
                 <span>{{ cityCountry }} </span>
               </div>
-              <div class="mb-2 text-blueGray-600 mt-4">
-                <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-                <span id="UserProfession"></span>
-              </div>
-              <!-- <div id="WHATISTHIS" class="mb-2 text-blueGray-600">
-                <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                1337 Coding School
-              </div> -->
             </div>
             <div class="mt-10 pt-8 border-t border-blueGray-200 text-center">
               <div class="flex flex-wrap justify-center">
@@ -165,7 +157,7 @@
             </div>
             <div
               v-if="social"
-              class="mt-10 py-10 border-t border-blueGray-200 text-center"
+              class="mt-10 py-10 border-t border-blueGray-200 text-center mx-auto"
             >
               <div class="flex flex-wrap justify-start">
                 <div
@@ -290,7 +282,7 @@ export default {
           this.$router.push("/");
         }
         const response = await fetch(
-          `${"http://10.11.12.12:8000" || "http://localhost:8000"}/api/users/${this.$route.params.profile}`,
+          `${"http://10.11.12.9:8000" || "http://localhost:8000"}/api/users/${this.$route.params.profile}`,
           {
             method: "GET",
             headers: {
@@ -304,7 +296,7 @@ export default {
         } else {
           const user = await content.user;
           this.fetched = true;
-          this.image = `${"http://10.11.12.12:8000" || "http://localhost:8000"}/${user.image}`;
+          this.image = `${"http://10.11.12.9:8000" || "http://localhost:8000"}/${user.image}`;
           this.fullName = `${user.surname} ${user.name}`;
           this.name = user.name;
           this.surname = user.surname;
@@ -332,7 +324,7 @@ export default {
             this.$router.push("/");
           }
           const response = await fetch(
-            `${"http://10.11.12.12:8000" || "http://localhost:8000"}/api/contacts/${this.$route.params.profile}`,
+            `${"http://10.11.12.9:8000" || "http://localhost:8000"}/api/contacts/${this.$route.params.profile}`,
             {
               method: "GET",
               headers: {
@@ -344,7 +336,7 @@ export default {
           if (content.message) {
             this.errors = content.message;
           } else {
-            window.location.href = `${"http://10.11.12.12:8000" || "http://localhost:8000"}/${content.link}`;
+            window.location.href = `${"http://10.11.12.9:8000" || "http://localhost:8000"}/${content.link}`;
           }
         } catch (err) {
           console.log(err);

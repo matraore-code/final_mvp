@@ -34,7 +34,7 @@
           <div class="col">
             <div class="content-9-img video-preview wow fadeInUp">
               <!-- Play Icon -->
-              <a class="video-popup1" href="https://youtu.be/VF47kno4Dro">
+              <a class="video-popup1" href="https://www.youtube.com/embed/mZbQ_FjPJSI">
                 <div class="video-btn video-btn-xl bg-violet-red ico-90">
                   <div class="video-block-wrapper">
                     <span class="flaticon-play-button"></span>
@@ -45,7 +45,7 @@
               <!-- Preview Image -->
               <img
                 class="img-fluid"
-                src="#"
+                src="~/assets/images/mobile.png"
                 alt="video-preview"
               />
             </div>
